@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './Header.css'
 
 export default function Header() {
-  const [alphaOn, setAlphaOn] = useState(false)
   const [searchValue, setSearchValue] = useState('')
 
   return (
@@ -17,32 +16,21 @@ export default function Header() {
           <a href="/ideas/feed" className="nav-link">Ideas</a>
           <a href="https://docs.kalshi.com" className="nav-link" target="_blank" rel="noopener noreferrer">API</a>
         </nav>
-        <div className="header-search">
-          <span className="material-symbols-outlined search-icon">search</span>
-          <input
-            type="search"
-            className="search-input"
-            placeholder="Search markets or profiles"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-            aria-label="Search markets or profiles"
-          />
-        </div>
-        <div className="header-actions">
-          <a href="/sign-in" className="btn btn--ghost">Log in</a>
-          <a href="/sign-up" className="btn btn--primary">Sign up</a>
-          <div className="alpha-toggle">
-            <span className="alpha-label">Alpha</span>
-            <button
-              type="button"
-              className={`alpha-switch ${alphaOn ? 'alpha-switch--on' : ''}`}
-              onClick={() => setAlphaOn(!alphaOn)}
-              aria-pressed={alphaOn}
-              aria-label="Toggle Alpha"
-            >
-              <span className="alpha-switch-track" />
-              <span className="alpha-switch-thumb" />
-            </button>
+        <div className="header-right">
+          <div className="header-search">
+            <span className="material-symbols-outlined search-icon">search</span>
+            <input
+              type="search"
+              className="search-input"
+              placeholder="Search markets or profiles"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              aria-label="Search markets or profiles"
+            />
+          </div>
+          <div className="header-actions">
+            <a href="/sign-in" className="btn btn--ghost">Log in</a>
+            <a href="/sign-up" className="btn btn--primary">Sign up</a>
           </div>
         </div>
       </div>

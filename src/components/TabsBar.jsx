@@ -15,7 +15,7 @@ export default function TabsBar({ activeTab = 'all', onTabChange }) {
             <button
               key={tab.id}
               type="button"
-              className={`tab tab--chip ${activeTab === tab.id ? 'tab--active' : ''}`}
+              className={`tab ${activeTab === tab.id ? 'tab--active' : ''}`}
               role="tab"
               aria-selected={activeTab === tab.id}
               onClick={() => onTabChange?.(tab.id)}

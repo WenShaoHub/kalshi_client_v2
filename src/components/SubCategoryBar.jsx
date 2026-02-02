@@ -1,25 +1,25 @@
 import './SubCategoryBar.css'
 
-const POLITICS_SUBS = [
-  { id: 'all', label: 'All' },
-  { id: 'us-elections', label: 'US Elections' },
-  { id: 'primaries', label: 'Primaries' },
-  { id: 'trump', label: 'Trump' },
-  { id: 'foreign', label: 'Foreign Elections' },
-  { id: 'international', label: 'International' },
-  { id: 'house', label: 'House' },
-  { id: 'congress', label: 'Congress' },
-  { id: 'scotus', label: 'SCOTUS & courts' },
-  { id: 'local', label: 'Local' },
-  { id: 'recurring', label: 'Recurring' },
-  { id: 'sort', label: 'Sort / Filter' },
+/* 话题/标签：For you 为首项，其余为热门话题 */
+const TOPIC_PILLS = [
+  { id: 'for-you', label: 'For you' },
+  { id: 'grammys', label: 'The Grammys' },
+  { id: 'shutdown', label: 'Shutdown' },
+  { id: 'pro-football', label: 'Pro Football Championship' },
+  { id: 'scotus', label: 'SCOTUS' },
+  { id: 'iran', label: 'Iran' },
+  { id: 'oscars', label: 'The Oscars' },
+  { id: 'greenland', label: 'Greenland' },
+  { id: 'harry-styles', label: 'Harry Styles' },
+  { id: 'mayor-mamdani', label: 'Mayor Mamdani' },
+  { id: 'nhl', label: 'NHL' },
 ]
 
-export default function SubCategoryBar({ activeSub = 'all', onSubChange }) {
+export default function SubCategoryBar({ activeSub = 'for-you', onSubChange }) {
   return (
     <section className="sub-category-bar">
       <div className="sub-category-bar-inner">
-        {POLITICS_SUBS.map((sub) => (
+        {TOPIC_PILLS.map((sub) => (
           <button
             key={sub.id}
             type="button"

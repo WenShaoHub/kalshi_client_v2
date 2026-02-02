@@ -35,7 +35,7 @@ export default function MarketCard({
           <span className="outcome-ai">AI</span>
           <div className="outcome-buttons outcome-buttons--header" aria-hidden />
         </li>
-        {outcomes.map((outcome, i) => (
+        {outcomes.slice(0, 2).map((outcome, i) => (
           <li key={i} className="market-outcome">
             <span className="outcome-label">{outcome.label}</span>
             <span className="outcome-pct">{outcome.pct}%</span>

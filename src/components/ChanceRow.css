@@ -1,0 +1,120 @@
+.chance-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--kalshi-palette-fill-x60);
+}
+
+.chance-row:last-child {
+  border-bottom: none;
+}
+
+.chance-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 0;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: background 0.15s;
+}
+
+.chance-row-inner:hover {
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.chance-row-avatar-wrap {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.chance-row-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chance-row-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--kalshi-palette-fill-x50);
+}
+
+.chance-row-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x10);
+}
+
+.chance-row-pct {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--kalshi-palette-text-x10);
+  min-width: 3em;
+  text-align: right;
+}
+
+.chance-row-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  min-width: 2em;
+}
+
+.chance-row-change--up {
+  color: var(--kalshi-palette-green-x10);
+}
+
+.chance-row-change--down {
+  color: var(--kalshi-palette-critical-x10);
+}
+
+.chance-row-change-icon {
+  font-size: 18px !important;
+  margin: 0 -4px 0 0;
+}
+
+.chance-row-buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.chance-row-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+
+.chance-row-btn--yes {
+  background: var(--kalshi-palette-yes-x20);
+  color: var(--kalshi-palette-yes-x10);
+}
+
+.chance-row-btn--yes:hover {
+  background: var(--kalshi-palette-yes-x30);
+}
+
+.chance-row-btn--no {
+  background: var(--kalshi-palette-no-x20);
+  color: var(--kalshi-palette-no-x10);
+}
+
+.chance-row-btn--no:hover {
+  background: var(--kalshi-palette-no-x30);
+}

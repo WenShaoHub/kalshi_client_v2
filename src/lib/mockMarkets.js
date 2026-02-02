@@ -1,6 +1,7 @@
 export const MOCK_MARKETS = [
   {
     id: '1',
+    category: 'sports',
     eventSubtitle: 'ATP Challenger Brisbane',
     title: 'Bouzige vs Schoolkate',
     eventImage: 'https://picsum.photos/id/10/112/112',
@@ -15,6 +16,7 @@ export const MOCK_MARKETS = [
   },
   {
     id: '2',
+    category: 'sports',
     eventSubtitle: 'ATP Challenger Brisbane',
     title: 'Shimizu vs Tokuda',
     eventImage: 'https://picsum.photos/id/11/112/112',
@@ -29,6 +31,7 @@ export const MOCK_MARKETS = [
   },
   {
     id: '3',
+    category: 'politics',
     eventSubtitle: 'Politics',
     title: 'Margin of victory in the 1st round of the Texas Senate race?',
     eventImage: 'https://picsum.photos/id/20/112/112',
@@ -44,6 +47,7 @@ export const MOCK_MARKETS = [
   },
   {
     id: '4',
+    category: 'politics',
     eventSubtitle: 'Politics',
     title: 'Who will win the Texas Senate election in 2026?',
     eventImage: 'https://picsum.photos/id/21/112/112',
@@ -59,6 +63,7 @@ export const MOCK_MARKETS = [
   },
   {
     id: '5',
+    category: 'politics',
     eventSubtitle: 'Politics',
     title: 'Will Trump win the 2026 presidential election?',
     eventImage: 'https://picsum.photos/id/22/112/112',
@@ -73,6 +78,7 @@ export const MOCK_MARKETS = [
   },
   {
     id: '6',
+    category: 'politics',
     eventSubtitle: 'Politics',
     title: 'Which party will control the House after 2026?',
     eventImage: 'https://picsum.photos/id/23/112/112',
@@ -85,5 +91,35 @@ export const MOCK_MARKETS = [
     isNew: false,
     priceChange: null,
     aiAnalysis: '席位数模型显示民主党小幅领先，Tie 概率被市场略低估，可关注关键选区。',
+  },
+  {
+    id: '7',
+    category: 'culture',
+    eventSubtitle: 'Culture',
+    title: 'Who will attend The 68th Grammy Awards?',
+    eventImage: 'https://picsum.photos/id/30/112/112',
+    outcomes: [
+      { label: 'Benny Blanco', pct: 3, aiProb: 5 },
+      { label: 'Jennifer Lopez', pct: 1, aiProb: 2 },
+    ],
+    volume: '$38,981',
+    isNew: false,
+    priceChange: null,
+    aiAnalysis: '娱乐事件热度高，AI 结合出席历史与档期给出概率。',
+  },
+  {
+    id: '8',
+    category: 'crypto',
+    eventSubtitle: 'Crypto',
+    title: 'Will Bitcoin reach $100k by end of 2025?',
+    eventImage: 'https://picsum.photos/id/31/112/112',
+    outcomes: [
+      { label: 'Yes', pct: 55, aiProb: 52 },
+      { label: 'No', pct: 45, aiProb: 48 },
+    ],
+    volume: '$256,000',
+    isNew: false,
+    priceChange: null,
+    aiAnalysis: '市场与 AI 均略偏多，需关注宏观与监管动态。',
   },
 ]

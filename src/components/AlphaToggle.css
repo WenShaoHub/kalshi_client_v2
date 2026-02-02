@@ -1,0 +1,47 @@
+.alpha-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.alpha-label {
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x20);
+}
+
+.alpha-switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border-radius: var(--radius-pill);
+  background: var(--kalshi-palette-fill-x40);
+  transition: background 0.2s;
+}
+
+.alpha-switch--on {
+  background: var(--kalshi-palette-brand-primary);
+}
+
+.alpha-switch-track {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.alpha-switch-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--kalshi-palette-surface-x10);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.alpha-switch--on .alpha-switch-thumb {
+  transform: translateX(16px);
+}

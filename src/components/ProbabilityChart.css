@@ -1,0 +1,115 @@
+.probability-chart {
+  margin-bottom: 32px;
+  padding: 16px;
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-surface-foreground);
+  border-radius: var(--radius-lg);
+}
+
+.probability-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.probability-chart-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--kalshi-palette-text-x10);
+}
+
+.probability-chart-ranges {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.probability-chart-range {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x20);
+  background: transparent;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+
+.probability-chart-range:hover {
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.probability-chart-range--active {
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.probability-chart-filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+  color: var(--kalshi-palette-text-x20);
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+
+.probability-chart-filter:hover {
+  background: var(--kalshi-palette-fill-x55);
+  color: var(--kalshi-palette-text-x10);
+}
+
+.probability-chart-filter .material-symbols-outlined {
+  font-size: 20px !important;
+}
+
+.probability-chart-wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.probability-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.probability-chart-grid {
+  stroke: var(--kalshi-palette-fill-x60);
+  stroke-width: 1;
+}
+
+.probability-chart-axis-label {
+  font-size: 11px;
+  fill: var(--kalshi-palette-text-x20);
+}
+
+.probability-chart-axis-label--x {
+  font-size: 10px;
+}
+
+.probability-chart-vline {
+  stroke: var(--kalshi-palette-text-x30);
+  stroke-width: 1;
+}
+
+.probability-chart-line {
+  vector-effect: non-scaling-stroke;
+}
+
+.probability-chart-footer {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--kalshi-palette-text-x20);
+}
+
+.probability-chart-vol {
+  font-weight: var(--font-weight-medium);
+}

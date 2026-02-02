@@ -1,0 +1,31 @@
+.summary-probs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.summary-prob-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary-prob-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.summary-prob-name {
+  color: var(--kalshi-palette-text-x10);
+  font-weight: var(--font-weight-medium);
+}
+
+.summary-prob-pct {
+  color: var(--kalshi-palette-text-x20);
+  font-weight: var(--font-weight-semibold);
+}

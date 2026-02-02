@@ -1,0 +1,182 @@
+.trading-panel {
+  width: 352px;
+  padding: 16px;
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-surface-foreground);
+  border-radius: 16px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trading-panel-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--kalshi-palette-text-x10);
+  line-height: 1.35;
+}
+
+.trading-panel-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.trading-panel-selected-label {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x10);
+}
+
+.trading-panel-selected-avatar-wrap {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.trading-panel-selected-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trading-panel-selected-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--kalshi-palette-fill-x50);
+}
+
+.trading-panel-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.trading-panel-tab {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--kalshi-palette-text-x20);
+  background: var(--kalshi-palette-fill-x55);
+  border-radius: var(--radius-md);
+  transition: background 0.15s, color 0.15s;
+}
+
+.trading-panel-tab:hover {
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-fill-x50);
+}
+
+.trading-panel-tab--active {
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-fill-x40);
+}
+
+.trading-panel-unit {
+  width: 100%;
+}
+
+.trading-panel-select {
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-fill-x40);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.trading-panel-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.trading-panel-btn {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.trading-panel-btn:active {
+  transform: scale(0.98);
+}
+
+.trading-panel-btn--yes {
+  background: var(--kalshi-palette-yes-x10);
+  color: var(--kalshi-palette-text-white);
+}
+
+.trading-panel-btn--yes:hover {
+  background: var(--kalshi-palette-yes-x40);
+  color: var(--kalshi-palette-text-white);
+}
+
+.trading-panel-btn--no {
+  background: var(--kalshi-palette-no-x10);
+  color: var(--kalshi-palette-text-white);
+}
+
+.trading-panel-btn--no:hover {
+  background: var(--kalshi-palette-no-x40);
+  color: var(--kalshi-palette-text-white);
+}
+
+.trading-panel-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trading-panel-amount-label {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x20);
+}
+
+.trading-panel-amount-input {
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-fill-x40);
+  border-radius: var(--radius-md);
+}
+
+.trading-panel-amount-input::placeholder {
+  color: var(--kalshi-palette-text-x20);
+}
+
+.trading-panel-amount-hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--kalshi-palette-text-x20);
+}
+
+.trading-panel-cta {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--kalshi-palette-text-white);
+  background: var(--kalshi-palette-brand-primary);
+  border-radius: var(--radius-md);
+  transition: background 0.15s, filter 0.15s;
+}
+
+.trading-panel-cta:hover {
+  background: var(--kalshi-palette-green-x10);
+  filter: brightness(0.95);
+}

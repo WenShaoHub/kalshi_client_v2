@@ -1,3 +1,4 @@
+/* 话题/标签栏：药丸形按钮，横向可滚动 */
 .sub-category-bar {
   padding: 12px 24px 16px;
   overflow-x: auto;
@@ -6,7 +7,7 @@
 .sub-category-bar-inner {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 4px;
@@ -15,20 +16,29 @@
 .sub-pill {
   flex-shrink: 0;
   padding: 8px 16px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: var(--font-weight-medium);
-  color: var(--kalshi-palette-text-x20);
-  background: var(--kalshi-palette-fill-x55);
+  color: var(--kalshi-palette-text-x10);
+  background: var(--kalshi-palette-surface-x10);
+  border: 1px solid var(--kalshi-palette-fill-x40);
   border-radius: var(--radius-pill);
-  transition: color 0.15s, background 0.15s;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 
 .sub-pill:hover {
   color: var(--kalshi-palette-text-x10);
-  background: var(--kalshi-palette-fill-x50);
+  background: var(--kalshi-palette-fill-x55);
+  border-color: var(--kalshi-palette-fill-x40);
 }
 
+/* For you 选中：浅绿底、绿字 */
 .sub-pill--active {
   color: var(--kalshi-palette-brand-primary);
   background: var(--kalshi-palette-brand-x20);
+  border-color: transparent;
+}
+
+.sub-pill--active:hover {
+  background: var(--kalshi-palette-brand-x20);
+  border-color: transparent;
 }

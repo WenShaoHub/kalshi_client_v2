@@ -4,6 +4,65 @@
   flex-direction: column;
 }
 
+/* Alpha 与分类同一行 */
+.categories-row {
+  padding: 12px 24px 0;
+  border-bottom: 1px solid var(--kalshi-palette-surface-foreground);
+}
+
+.categories-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.categories-row .tabs-bar {
+  padding: 0;
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+}
+
+.categories-row .tabs-bar .tabs-inner {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 12px;
+}
+
+.categories-row .tabs-bar .tabs {
+  align-items: stretch;
+}
+
+.categories-row .category-bar {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border-bottom: none;
+  overflow-x: auto;
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+}
+
+.categories-row .category-bar-inner {
+  padding-bottom: 12px;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+}
+
+.categories-row .category-bar .category-link,
+.categories-row .tabs-bar .tab {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.35;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
 .markets-section {
   flex: 1;
   padding: 0 24px 48px;
@@ -26,6 +85,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  align-items: stretch;
+}
+
+.market-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  min-height: 0;
 }
 
 @media (max-width: 1100px) {
