@@ -1,0 +1,49 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.markets-section {
+  flex: 1;
+  padding: 0 24px 48px;
+}
+
+.markets-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--kalshi-palette-text-x10);
+  letter-spacing: -0.02em;
+}
+
+.market-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  .market-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .market-list {
+    grid-template-columns: 1fr;
+  }
+
+  .markets-section,
+  .tabs-bar,
+  .category-bar,
+  .sub-category-bar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

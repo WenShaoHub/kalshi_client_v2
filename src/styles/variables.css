@@ -1,0 +1,40 @@
+/* Kalshi design tokens – from kalshi.html inline palette */
+:root {
+  --kalshi-palette-text-x10: rgba(0, 0, 0, 0.9);
+  --kalshi-palette-text-x20: rgba(0, 0, 0, 0.5);
+  --kalshi-palette-text-x30: rgba(0, 0, 0, 0.3);
+  --kalshi-palette-text-black: rgba(0, 0, 0, 0.9);
+  --kalshi-palette-text-white: rgba(255, 255, 255, 1);
+  --kalshi-palette-fill-x40: rgba(0, 0, 0, 0.1);
+  --kalshi-palette-fill-x50: rgba(0, 0, 0, 0.07);
+  --kalshi-palette-fill-x55: rgba(0, 0, 0, 0.05);
+  --kalshi-palette-fill-x60: rgba(0, 0, 0, 0.03);
+  --kalshi-palette-surface-x10: rgba(255, 255, 255, 1);
+  --kalshi-palette-surface-x20: rgba(255, 255, 255, 0.96);
+  --kalshi-palette-surface-foreground: rgba(0, 0, 0, 0.05);
+  --kalshi-palette-yes-x10: rgba(38, 92, 255, 1);
+  --kalshi-palette-yes-x20: rgba(38, 92, 255, 0.08);
+  --kalshi-palette-yes-x30: rgba(38, 92, 255, 0.12);
+  --kalshi-palette-no-x10: rgba(170, 0, 255, 1);
+  --kalshi-palette-no-x20: rgba(170, 0, 255, 0.08);
+  --kalshi-palette-no-x30: rgba(170, 0, 255, 0.12);
+  --kalshi-palette-critical-x10: rgba(217, 22, 22, 1);
+  --kalshi-palette-brand-primary: #09C285;
+  --kalshi-palette-brand-secondary: rgba(0, 50, 33, 1);
+  --kalshi-palette-brand-tertiary: #003221;
+  --kalshi-palette-brand-x20: rgba(229, 251, 244, 1);
+  --kalshi-palette-green-x10: rgba(10, 194, 133, 1);
+  --kalshi-palette-green-x20: rgba(10, 194, 133, 0.08);
+  --kalshi-palette-teal-x10: rgba(0, 181, 217, 1);
+  --announcement-height: 0px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,43 @@
+.tabs-bar {
+  padding: 12px 24px 0;
+}
+
+.tabs-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x20);
+  border-radius: var(--radius-sm);
+  transition: color 0.15s, background 0.15s;
+}
+
+.tab:hover {
+  color: var(--kalshi-palette-text-x10);
+}
+
+.tab--chip {
+  border-radius: var(--radius-pill);
+  background: var(--kalshi-palette-fill-x55);
+}
+
+.tab--active {
+  color: var(--kalshi-palette-brand-primary);
+  font-weight: var(--font-weight-semibold);
+  background: var(--kalshi-palette-brand-x20);
+}
+
+.tab--active.tab--chip {
+  background: var(--kalshi-palette-fill-x55);
+  color: var(--kalshi-palette-brand-primary);
+}

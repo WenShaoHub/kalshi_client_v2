@@ -1,0 +1,35 @@
+# Kalshi 前端复刻项目 - Cursor 规则
+
+## 项目定位
+- 复刻 kalshi.com 的前端：预测市场交易所 UI，含市场列表、分类、Tab、卡片、Header/Footer。
+- 技术栈：Vite + React；样式用纯 CSS + CSS 变量（设计 token 见 brandkit）。
+
+## 代码规范
+
+### 通用
+- 使用简体中文写注释与文档；变量、组件名、文件名用英文。
+- 保持文件简洁：单文件逻辑集中，单组件单文件，必要时拆成小组件或 hooks。
+
+### React
+- 使用函数组件和 Hooks，不写 class 组件。
+- 组件文件：`PascalCase.jsx`，默认导出组件；可复用逻辑抽成自定义 Hook（`use*.js`）。
+- Props 保持扁平、语义清晰；列表项提供稳定 `key`（如 `id`）。
+
+### 样式
+- 设计 token 统一放在 `src/styles/variables.css`（颜色、字体、圆角、阴影等），其他样式通过 `var(--*)` 引用。
+- 类名使用 BEM 或语义化前缀（如 `.site-header`、`.market-card`、`.nav-link--active`），避免随意缩写。
+- 不引入 Tailwind/Emotion 等，复刻阶段用纯 CSS + 已有 variables。
+
+### 结构与命名
+- 页面级放在 `src/pages/`，可复用 UI 放在 `src/components/`，工具或 API 封装放在 `src/lib/`。
+- 路由与 kalshi.com 一致：`/` 首页，`/category/*`、`/calendar`、`/ideas/feed` 等按需实现；外部链接如 API 文档用 `target="_blank" rel="noopener noreferrer"`。
+
+## 设计系统（Kalshi brandkit）
+- 字体：Inter，标题 Semi Bold(600)、正文 Medium(500)；使用句子大小写，不用 Title Case。
+- 主色：`#09C285`（primary）、`#003221`（secondary）；交易：Yes `#265CFF`、No `#AA00FF`，涨 `#0AC285`、跌 `#D91616`。
+- 文字/背景：主文字 rgba(0,0,0,0.87)，次要 0.5/0.3 透明度；背景白与浅灰（如 #f5f5f5）。
+
+## 与复刻相关的决策
+- 以 kalshi.html 和 docs/KALSHI_SITE_ANALYSIS.md（若存在）为结构和设计参考。
+- 先静态/mock 数据实现 UI，API 调用封装在 `src/lib/` 并预留接口，便于后续接 Kalshi API。
+- 保持无障碍与语义化：用 `<header>`、`<main>`、`<nav>`、`<footer>`、`<section>`、`<article>`；Tab 用 `role="tablist"` 与 `aria-selected`。

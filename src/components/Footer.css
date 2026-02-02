@@ -1,0 +1,35 @@
+.site-footer {
+  padding: 32px 24px;
+  background: var(--kalshi-palette-surface-x20);
+  border-top: 1px solid var(--kalshi-palette-surface-foreground);
+  margin-top: 48px;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: var(--kalshi-palette-text-x20);
+}
+
+.footer-links a:hover {
+  color: var(--kalshi-palette-text-x10);
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 12px;
+  color: var(--kalshi-palette-text-x20);
+}

@@ -1,0 +1,39 @@
+.category-bar {
+  padding: 0 24px;
+  border-bottom: 1px solid var(--kalshi-palette-surface-foreground);
+}
+
+.category-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: 0;
+}
+
+.category-bar-inner::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-link {
+  flex-shrink: 0;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  color: var(--kalshi-palette-text-x20);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.category-link:hover {
+  color: var(--kalshi-palette-text-x10);
+}
+
+.category-link--active {
+  color: var(--kalshi-palette-text-x10);
+  font-weight: var(--font-weight-semibold);
+  border-bottom-color: var(--kalshi-palette-text-x10);
+}
