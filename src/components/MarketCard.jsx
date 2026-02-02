@@ -60,7 +60,7 @@ export default function MarketCard({
       </div>
       {aiAnalysis && (
         <div className="market-card-ai-analysis">
-          <p className="market-card-ai-analysis-label">AI 分析</p>
+          <p className="market-card-ai-analysis-label">AI Analysis</p>
           <div className="market-card-ai-analysis-text">{aiAnalysis}</div>
         </div>
       )}

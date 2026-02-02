@@ -10,7 +10,7 @@ const FED_CHAIR_DETAIL = {
   eventImage: 'https://picsum.photos/id/22/800/450',
   volume: '$111,443,587',
   disclaimer: 'The nomination must be formally transmitted to and received by the Senate.',
-  aiAnalysis: '当前民调与事件模型下，Kevin Warsh 被提名概率最高；AI 综合历史提名与政策倾向，认为市场对 Warsh 的定价略偏保守，可关注听证会日程。',
+  aiAnalysis: 'Under current polls and event models, Kevin Warsh has the highest nomination probability; AI weighs historical nominations and policy stance and sees the market as slightly conservative on Warsh. Watch hearing schedules.',
   summaryCandidates: [
     { name: 'Kevin Warsh', pct: 35.9, colorKey: 'green' },
     { name: 'Judy Shelton', pct: 6.0, colorKey: 'blue' },

@@ -60,7 +60,7 @@ export default function MarketDetail() {
             )}
             {detail.aiAnalysis && (
               <div className="market-detail-ai">
-                <p className="market-detail-ai-label">AI 分析</p>
+                <p className="market-detail-ai-label">AI Analysis</p>
                 <div className="market-detail-ai-text">{detail.aiAnalysis}</div>
               </div>
             )}

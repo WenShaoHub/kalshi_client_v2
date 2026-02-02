@@ -12,7 +12,7 @@ export const MOCK_MARKETS = [
     volume: '$1,222,152',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '近期战绩与赔率均偏向 Schoolkate，AI 判断其胜率较高，建议关注盘口变化。',
+    aiAnalysis: 'Recent form and odds favor Schoolkate; AI sees higher win probability. Watch line movement.',
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ export const MOCK_MARKETS = [
     volume: '$579,799',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '双方实力接近，市场与 AI 概率基本一致，波动可能来自临场状态。',
+    aiAnalysis: 'Both sides are close in strength; market and AI probabilities align. Volatility may reflect on-court form.',
   },
   {
     id: '3',
@@ -43,7 +43,7 @@ export const MOCK_MARKETS = [
     volume: '$3,241',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '民调显示 Allred 领先，AI 综合历史选区数据认为 6–9% 区间概率被低估。',
+    aiAnalysis: 'Polls show Allred ahead; AI uses historical precinct data and sees the 6–9% band as undervalued.',
   },
   {
     id: '4',
@@ -59,7 +59,7 @@ export const MOCK_MARKETS = [
     volume: '$38,981',
     isNew: true,
     priceChange: null,
-    aiAnalysis: '两党支持率接近，AI 认为民主党在摇摆选民中略占优，但不确定性仍高。',
+    aiAnalysis: 'Support is close; AI gives Democrats a slight edge among swing voters, with high uncertainty.',
   },
   {
     id: '5',
@@ -74,7 +74,7 @@ export const MOCK_MARKETS = [
     volume: '$125,420',
     isNew: false,
     priceChange: { text: 'No offers $100 → $103' },
-    aiAnalysis: '当前民调与事件模型下，AI 略偏向 No，建议关注中期选举与政策议题走向。',
+    aiAnalysis: 'Under current polls and event models, AI leans No. Watch midterms and policy developments.',
   },
   {
     id: '6',
@@ -90,7 +90,7 @@ export const MOCK_MARKETS = [
     volume: '$67,200',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '席位数模型显示民主党小幅领先，Tie 概率被市场略低估，可关注关键选区。',
+    aiAnalysis: 'Seat model shows a small Democratic lead; Tie is slightly undervalued. Watch key districts.',
   },
   {
     id: '7',
@@ -105,7 +105,7 @@ export const MOCK_MARKETS = [
     volume: '$38,981',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '娱乐事件热度高，AI 结合出席历史与档期给出概率。',
+    aiAnalysis: 'High-profile event; AI combines attendance history and scheduling to estimate probability.',
   },
   {
     id: '8',
@@ -120,6 +120,6 @@ export const MOCK_MARKETS = [
     volume: '$256,000',
     isNew: false,
     priceChange: null,
-    aiAnalysis: '市场与 AI 均略偏多，需关注宏观与监管动态。',
+    aiAnalysis: 'Market and AI both lean bullish. Watch macro and regulatory developments.',
   },
 ]
