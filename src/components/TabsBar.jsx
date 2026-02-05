@@ -3,10 +3,9 @@ import './TabsBar.css'
 const TABS = [
   { id: 'trending', label: 'Trending' },
   { id: 'new', label: 'New' },
-  { id: 'all', label: 'All' },
 ]
 
-export default function TabsBar({ activeTab = 'all', onTabChange }) {
+export default function TabsBar({ activeTab = 'trending', onTabChange }) {
   return (
     <section className="tabs-bar">
       <div className="tabs-inner">

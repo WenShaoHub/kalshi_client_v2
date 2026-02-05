@@ -95,3 +95,21 @@
   padding: 12px 14px;
   border: 1px solid var(--kalshi-palette-fill-x60);
 }
+
+.market-detail-loading,
+.market-detail-error {
+  margin: 24px 0;
+  font-size: 15px;
+  color: var(--kalshi-palette-text-x20);
+}
+
+.market-detail-error {
+  color: var(--kalshi-palette-status-negative, #d91616);
+}
+
+.market-detail-back {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--kalshi-palette-primary, #09c285);
+}

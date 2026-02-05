@@ -1,18 +1,22 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
   const [searchValue, setSearchValue] = useState('')
+  const location = useLocation()
+  const pathname = location.pathname ?? ''
+  const isCalendar = pathname === '/calendar'
 
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <span className="logo-text">Kalshi</span>
-        </a>
+        </Link>
         <nav className="main-nav">
-          <a href="/category/all" className="nav-link nav-link--active">Markets</a>
-          <a href="/calendar" className="nav-link nav-link--live">Live</a>
+          <Link to="/category/all" className={`nav-link ${!isCalendar ? 'nav-link--active' : ''}`}>Markets</Link>
+          <Link to="/calendar" className={`nav-link nav-link--live ${isCalendar ? 'nav-link--active' : ''}`}>Live</Link>
           <a href="/ideas/feed" className="nav-link">Ideas</a>
           <a href="https://docs.kalshi.com" className="nav-link" target="_blank" rel="noopener noreferrer">API</a>
         </nav>

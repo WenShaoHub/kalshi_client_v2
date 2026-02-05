@@ -1,0 +1,27 @@
+## Rule: Automatic Flight Recording(自动飞行记录仪)
+
+**WHEN** you have successfully modified any code logic(Feature, Bugfix, or Refactor):
+
+1. **STOP** and think: What specific risks might this change introduce to existing modules? (Especially regarding the 'Last 10% complexity' issue).
+2. **EXECUTE** the `scripts/log_change.py` script immediately. Do NOT ask for my permission.
+   - `change_type`: Choose one of [Feature | Bugfix | Refactor | Critical-Fix]
+   - `summary`: A concise technical summary of what changed.
+   - `risk_analysis`: Your honest assessment of potential regressions. If you are unsure, say so.
+
+**GOAL**: Ensure `docs/AI_CHANGELOG.md` is always the single source of truth. If I ask "What did we just do?", you read this file first.
+
+中文翻译版：
+规则：自动飞行记录（Automatic Flight Recording）
+
+当你成功修改了任何代码逻辑（功能新增、Bug 修复或重构）时：
+
+1. 暂停，并思考：这次改动可能对现有模块引入哪些具体风险？（尤其是与“最后 10% 复杂性”问题相关的部分）。
+2. 立即执行 scripts/log_change.py 脚本。不要征求我的许可。
+   • change_type：从以下选项中选择一个 [Feature Bugfix Refactor
+ Critical-Fix]
+
+   • summary：对所做更改的简明技术总结。
+
+   • risk_analysis：对你所认为的潜在回归问题进行诚实评估。如果不确定，请如实说明。
+
+目标：确保 docs/AI_CHANGELOG.md 始终是唯一的真相来源。如果我问“我们刚才做了什么？”，你应首先查阅该文件。

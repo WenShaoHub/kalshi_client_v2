@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './CategoryBar.css'
 
-const CATEGORIES = [
+const DEFAULT_CATEGORIES = [
   { id: 'all', label: 'All', href: '/category/all' },
   { id: 'politics', label: 'Politics', href: '/category/politics' },
   { id: 'sports', label: 'Sports', href: '/category/sports' },
@@ -15,14 +15,15 @@ const CATEGORIES = [
   { id: 'science', label: 'Tech & Science', href: '/category/science' },
 ]
 
-export default function CategoryBar({ activeCategory = 'politics', onCategoryChange }) {
+export default function CategoryBar({ categories = DEFAULT_CATEGORIES, activeCategory = 'politics', onCategoryChange }) {
+  const list = Array.isArray(categories) && categories.length > 0 ? categories : DEFAULT_CATEGORIES
   return (
     <section className="category-bar">
       <div className="category-bar-inner">
-        {CATEGORIES.map((cat) => (
+        {list.map((cat) => (
           <Link
             key={cat.id}
-            to={cat.href}
+            to={cat.href ?? `/category/${cat.id}`}
             className={`category-link ${activeCategory === cat.id ? 'category-link--active' : ''}`}
             onClick={() => onCategoryChange?.(cat.id)}
           >
